@@ -5,14 +5,14 @@ using UnityEngine.AI;
 
 public class PathFollow : MonoBehaviour
 {
-    public Transform player;
+     Transform player;
     private NavMeshAgent navMeshAgent;
     public float moveSpeed = 10f;
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        player = GameObject.Find("player").GetComponent<Transform>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame

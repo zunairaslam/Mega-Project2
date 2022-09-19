@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,6 +12,8 @@ public class PlayerController : MonoBehaviour
     float spamTime;
     float impulseTime;
     public GameObject impulse;
+    public Camera mainCamera;
+    public Vector3 mousePosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,13 +43,14 @@ public class PlayerController : MonoBehaviour
     {
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
-        turn.y += Input.GetAxis("Mouse X");
+        mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.y = 0f;
     }
     private void movement()
     {
-        transform.Translate(Vector3.forward * speed * verticalInput * Time.deltaTime);
-        transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime);
-        transform.localRotation = Quaternion.Euler(0, turn.y, 0);
+        transform.Translate(Vector3.forward * speed * verticalInput * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.right * speed * horizontalInput * Time.deltaTime, Space.World);
+        transform.LookAt(mousePosition);
     }
 
     private void OnCollisionEnter(Collision collision)

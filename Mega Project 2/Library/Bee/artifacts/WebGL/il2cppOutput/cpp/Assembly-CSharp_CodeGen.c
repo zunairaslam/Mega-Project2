@@ -40,15 +40,23 @@ extern void PlayerController_movement_m5635B1E1F2914002EDCD0AEC20E863FB1F58BE95 
 extern void PlayerController_OnCollisionEnter_m2FC01282FAEE546C4408E6B901DBB3EB5A5BF989 (void);
 // 0x0000000E System.Void PlayerController::.ctor()
 extern void PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33 (void);
-// 0x0000000F System.Void SpawnManager::Start()
+// 0x0000000F System.Void RadiusForce::Start()
+extern void RadiusForce_Start_m0621637FDC2D386F5A6FFCCDBE81130DA359FDDD (void);
+// 0x00000010 System.Void RadiusForce::Update()
+extern void RadiusForce_Update_mFDFA0A09E5D842780E985A1D2EE1B9328A022881 (void);
+// 0x00000011 System.Void RadiusForce::OnTriggerStay(UnityEngine.Collider)
+extern void RadiusForce_OnTriggerStay_mBC4EBCA9205DCCB1A2AD8DCCA9E4E986F5B010C8 (void);
+// 0x00000012 System.Void RadiusForce::.ctor()
+extern void RadiusForce__ctor_m747D5ED21C6A7DABD7CF8467E5676498C4C82BDC (void);
+// 0x00000013 System.Void SpawnManager::Start()
 extern void SpawnManager_Start_m65C9EA67649948222CFF4FBBF77BE2319D813DAF (void);
-// 0x00000010 System.Void SpawnManager::Update()
+// 0x00000014 System.Void SpawnManager::Update()
 extern void SpawnManager_Update_mD714BA3EADCC182FB7A93B9DE347D727E3A1BC53 (void);
-// 0x00000011 System.Void SpawnManager::SpawnBlocks()
+// 0x00000015 System.Void SpawnManager::SpawnBlocks()
 extern void SpawnManager_SpawnBlocks_m6D07FB131D8059CEA373E908022EF59FF346A8BC (void);
-// 0x00000012 System.Void SpawnManager::.ctor()
+// 0x00000016 System.Void SpawnManager::.ctor()
 extern void SpawnManager__ctor_m8DD503A0FFE79FA38CF0B7F013E54D24A04D166A (void);
-static Il2CppMethodPointer s_methodPointers[18] = 
+static Il2CppMethodPointer s_methodPointers[22] = 
 {
 	Enemy_Start_m8BBD9A5AE10A27ABDFCD9168B93CD9C69D229034,
 	Enemy_Update_m4149CFC3AC081AF0D654D9BDB6BC9B5540CE03D8,
@@ -64,37 +72,45 @@ static Il2CppMethodPointer s_methodPointers[18] =
 	PlayerController_movement_m5635B1E1F2914002EDCD0AEC20E863FB1F58BE95,
 	PlayerController_OnCollisionEnter_m2FC01282FAEE546C4408E6B901DBB3EB5A5BF989,
 	PlayerController__ctor_mDDAB7C7D82E1A5B3E6C197B1AB9D653DFE554F33,
+	RadiusForce_Start_m0621637FDC2D386F5A6FFCCDBE81130DA359FDDD,
+	RadiusForce_Update_mFDFA0A09E5D842780E985A1D2EE1B9328A022881,
+	RadiusForce_OnTriggerStay_mBC4EBCA9205DCCB1A2AD8DCCA9E4E986F5B010C8,
+	RadiusForce__ctor_m747D5ED21C6A7DABD7CF8467E5676498C4C82BDC,
 	SpawnManager_Start_m65C9EA67649948222CFF4FBBF77BE2319D813DAF,
 	SpawnManager_Update_mD714BA3EADCC182FB7A93B9DE347D727E3A1BC53,
 	SpawnManager_SpawnBlocks_m6D07FB131D8059CEA373E908022EF59FF346A8BC,
 	SpawnManager__ctor_m8DD503A0FFE79FA38CF0B7F013E54D24A04D166A,
 };
-static const int32_t s_InvokerIndices[18] = 
+static const int32_t s_InvokerIndices[22] = 
 {
-	980,
-	980,
-	851,
-	980,
-	980,
-	980,
-	980,
-	980,
-	980,
-	980,
-	980,
-	980,
-	851,
-	980,
-	980,
-	980,
-	980,
-	980,
+	990,
+	990,
+	861,
+	990,
+	990,
+	990,
+	990,
+	990,
+	990,
+	990,
+	990,
+	990,
+	861,
+	990,
+	990,
+	990,
+	861,
+	990,
+	990,
+	990,
+	990,
+	990,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	18,
+	22,
 	s_methodPointers,
 	0,
 	NULL,

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Impulse
+  - Enemy
   layers:
   - Default
   - TransparentFX

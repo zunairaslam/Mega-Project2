@@ -12,11 +12,13 @@ UnityEngine.Camera::get_targetDisplay
 UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
 UnityEngine.Camera::ScreenPointToRay_Injected
+UnityEngine.Camera::ScreenToWorldPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
 UnityEngine.Camera::get_clearFlags
 UnityEngine.Camera::get_targetTexture
 UnityEngine.CameraRaycastHelper::RaycastTry2D_Injected
 UnityEngine.CameraRaycastHelper::RaycastTry_Injected
+UnityEngine.Collider::set_isTrigger
 UnityEngine.Component::get_gameObject
 UnityEngine.Component::get_transform
 UnityEngine.ComputeShader::FindKernel
@@ -39,6 +41,7 @@ UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetDepthStencilFormatF
 UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetGraphicsFormat_Native_RenderTextureFormat
 UnityEngine.Experimental.Rendering.GraphicsFormatUtility::GetGraphicsFormat_Native_TextureFormat
 UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings::ScriptingDirtyReflectionSystemInstance
+UnityEngine.GameObject::GetComponentsInternal
 UnityEngine.GameObject::CompareTag
 UnityEngine.GameObject::Internal_CreateGameObject
 UnityEngine.GameObject::SendMessage
@@ -74,7 +77,17 @@ UnityEngine.Material::CreateWithString
 UnityEngine.Mathf::IsPowerOfTwo
 UnityEngine.Mathf::GammaToLinearSpace
 UnityEngine.Mathf::CorrelatedColorTemperatureToRGB_Injected
+UnityEngine.Mesh::get_canAccess
 UnityEngine.Mesh::Internal_Create
+UnityEngine.Mesh::PrintErrorCantAccessChannel
+UnityEngine.Mesh::RecalculateBoundsImpl
+UnityEngine.Mesh::RecalculateNormalsImpl
+UnityEngine.Mesh::SetArrayForChannelImpl
+UnityEngine.Mesh::SetIndicesImpl
+UnityEngine.MeshCollider::set_convex
+UnityEngine.MeshCollider::set_sharedMesh
+UnityEngine.MeshFilter::set_sharedMesh
+UnityEngine.MeshRenderer::set_additionalVertexStreams
 UnityEngine.MonoBehaviour::Internal_IsInvokingAll
 UnityEngine.MonoBehaviour::IsInvoking
 UnityEngine.MonoBehaviour::IsObjectMonoBehaviour
@@ -91,6 +104,7 @@ UnityEngine.MonoBehaviour::set_useGUILayout
 UnityEngine.MonoBehaviour::StartCoroutineManaged
 UnityEngine.MonoBehaviour::StartCoroutineManaged2
 UnityEngine.Object::GetOffsetOfInstanceIDInCPlusPlusObject
+UnityEngine.Object::GetName
 UnityEngine.Object::ToString
 UnityEngine.Object::Destroy
 UnityEngine.Object::set_hideFlags
@@ -109,8 +123,8 @@ UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
 UnityEngine.QualitySettings::get_activeColorSpace
-UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::LookRotation_Injected
+UnityEngine.Renderer::SetMaterial
 UnityEngine.Rendering.GraphicsSettings::get_lightsUseLinearIntensity
 UnityEngine.Rendering.ScriptableRenderContext::GetCameras_Internal_Injected
 UnityEngine.RenderTexture::GetDescriptor_Injected
@@ -122,6 +136,7 @@ UnityEngine.RenderTexture::set_depthStencilFormat
 UnityEngine.RenderTexture::set_graphicsFormat
 UnityEngine.RenderTexture::set_height
 UnityEngine.RenderTexture::set_width
+UnityEngine.Rigidbody::AddForce_Injected
 UnityEngine.Screen::get_height
 UnityEngine.Screen::get_width
 UnityEngine.ScriptableObject::CreateScriptableObject
@@ -140,7 +155,6 @@ UnityEngine.Transform::Internal_LookAt_Injected
 UnityEngine.Transform::TransformDirection_Injected
 UnityEngine.Transform::get_position_Injected
 UnityEngine.Transform::get_rotation_Injected
-UnityEngine.Transform::set_localRotation_Injected
 UnityEngine.Transform::set_position_Injected
 UnityEngine.Transform::GetChild
 UnityEngine.U2D.SpriteAtlasManager::Register
